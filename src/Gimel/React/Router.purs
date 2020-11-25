@@ -1,6 +1,7 @@
 module Gimel.React.Router where
 
 import CSS (CSS)
+import Effect (Effect)
 import Gimel.Attributes (Attribute, (=:))
 import Gimel.Html (Html, react)
 import Gimel.Utils (renderCSS)
@@ -14,6 +15,7 @@ foreign import classSwitch :: forall a. ReactClass a
 foreign import classRedirect :: forall a. ReactClass a
 foreign import classLink :: forall a. ReactClass a
 foreign import classNavLink :: forall a. ReactClass a
+foreign import useLocation :: Effect {pathname :: String}
 
 router :: forall event. Array (Attribute event) -> Array (Html event) -> Html event
 router = react classRouter

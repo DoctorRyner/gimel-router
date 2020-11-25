@@ -9,3 +9,4 @@ exports.classSwitch = R.Switch
 exports.classRedirect = R.Redirect
 exports.classLink = RDOM.Link
 exports.classNavLink = RDOM.NavLink
+exports.useLocation = RDOM.useLocation
